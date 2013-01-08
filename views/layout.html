@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="/additup/css/master.css" />
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+</head>
+<body id="body">
+
+	<div class="row">
+		<div class="span7">
+			<div class="container">
+				<div class="row" id="scoreboard">
+					<div class="span3 player-area" data-playernum="1">
+						<div class="span1">Player1</div>
+						<div class="span1" id="player1-score">0</div>
+					</div>
+					<div class="span3 player-area" data-playernum="2">
+						<div class="span1">Player2</div>
+						<div class="span1" id="player2-score">0</div>
+					</div>
+				</div>
+				<div class="row" id="grid">
+					<div class="span4">
+						<div class="row" id="row1" data-row="1">
+							<div class="span1 cell" data-col="1">
+								<p></p>
+							</div>
+							<div class="span1 cell" data-col="2">
+								<p></p>
+							</div>
+							<div class="span1 cell" data-col="3">
+								<p></p>
+							</div>
+							<div class="span1 cell" data-col="4">
+								<p></p>
+							</div>
+							<div class="span1 cell" data-col="5">
+								<p></p>
+							</div>
+						</div>
+						<div class="row" id="row2" data-row="2">
+							<div class="span1 cell" data-col="1">
+								<p></p>
+							</div>
+							<div class="span1 cell" data-col="2">
+								<p></p>
+							</div>
+							<div class="span1 cell" data-col="3">
+								<p></p>
+							</div>
+							<div class="span1 cell" data-col="4">
+								<p></p>
+							</div>
+							<div class="span1 cell" data-col="5">
+								<p></p>
+							</div>
+						</div>
+						<div class="row" id="row3" data-row="3">
+							<div class="span1 cell" data-col="1">
+								<p></p>
+							</div>
+							<div class="span1 cell" data-col="2">
+								<p></p>
+							</div>
+							<div class="span1 cell" data-col="3">
+								<p></p>
+							</div>
+							<div class="span1 cell" data-col="4">
+								<p></p>
+							</div>
+							<div class="span1 cell" data-col="5">
+								<p></p>
+							</div>
+						</div>
+						<div class="row" id="row4" data-row="4">
+							<div class="span1 cell" data-col="1">
+								<p></p>
+							</div>
+							<div class="span1 cell" data-col="2">
+								<p></p>
+							</div>
+							<div class="span1 cell" data-col="3">
+								<p></p>
+							</div>
+							<div class="span1 cell" data-col="4">
+								<p></p>
+							</div>
+							<div class="span1 cell" data-col="5">
+								<p></p>
+							</div>
+						</div>
+						<div class="row" id="row5" data-row="5">
+							<div class="span1 cell" data-col="1">
+								<p></p>
+							</div>
+							<div class="span1 cell" data-col="2">
+								<p></p>
+							</div>
+							<div class="span1 cell" data-col="3">
+								<p></p>
+							</div>
+							<div class="span1 cell" data-col="4">
+								<p></p>
+							</div>
+							<div class="span1 cell" data-col="5">
+								<p></p>
+							</div>
+						</div>
+					</div>
+					<div class="span2">
+						<div class="row" id="info-container">
+							<div class="row-fliud">
+								Tiles Remaining
+								<div id="tiles-remaining">3</div>
+							</div>
+							<br>
+							<div class="row-fliud">
+								Steals Remaining This Turn
+								<div id="steals-remaining">1</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="span3">
+						<button type="button" class="btn btn-primary"
+							data-loading-text="..." id="clear">Clear</button>
+					</div>
+					<div class="span3">
+						<button type="button" class="btn btn-primary"
+							data-loading-text="..." id="submit">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="span3 instructions-column">
+			<div class="row">
+				<b>Instructions</b>
+			</div>
+			<div class="row">Goal: Be the player with the lowest score
+				possible!</div>
+			<div class="row">- Play 3 tiles.</div>
+			<div class="row">- Your score that round is the sum of those 3
+				numbers.</div>
+			<div class="row">- Gray tiles and your own tiles are worth the
+				numbers on them.</div>
+			<div class="row">- Using your opponent's tiles gives you the
+				opposite of the numbers on them.</div>
+			<div class="row">- You can only use one of your opponent's
+				tiles per turn.</div>
+			<div class="row">- Game ends when all gray tiles are used up.</div>
+			<br>
+			<div class="row">
+				<b>Coming Up</b>
+			</div>
+			<div class="row">- Strategic tile placement mechanic</div>
+			<div class="row">- Realtime gameplay with friends</div>
+			<div class="row">- Look+Feel improvements</div>
+		</div>
+	</div>
+
+
+	<script src="/js/lib/underscore.js"></script>
+	<script src="/js/lib/jquery-1.8.3.js"></script>
+	<script src="/js/lib/jquery.color.js"></script>
+	<script src="/js/lib/backbone.js"></script>
+	<script src="/js/lib/backbone.marionette.js"></script>
+	<script src="/js/lib/bootstrap.js"></script>
+	<script data-main="/additup/js/main" src="/js/lib/require.js"></script>
+</body>
+</html>

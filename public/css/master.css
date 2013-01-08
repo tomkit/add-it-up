@@ -1,0 +1,64 @@
+#body {
+	
+}
+
+@-webkit-keyframes flip {
+    0%{}
+    100%{
+    -webkit-transform: rotateY(360deg);
+    }
+}
+
+::-moz-selection {
+	background-color: Transparent;
+	color: #000;
+}
+
+::selection {
+	background-color: Transparent;
+	color: #000;
+}
+
+.row {
+	margin: 1px 0 0px 0;
+}
+
+.player-area {
+	position: relative;
+	width: 222px;
+}
+
+#grid {
+	position: relative;
+	left: -11px;
+}
+
+.cell {
+	background-color: gray;
+	position: relative;
+	left: 30px;
+	width: 75px;
+	height: 75px;
+	margin-left: 1px !important;
+	display: table;
+}
+
+.cell p {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	font-size: x-large;
+}
+
+#info-container {
+	background-color: #FFD100;
+	height: 379px;
+	position: relative;
+	top: 0px;
+	left: 16px;
+}
+
+.instructions-column {
+	position: relative;
+	left: -60px;
+}
